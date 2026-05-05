@@ -1,0 +1,277 @@
+// IN FUNCTION WE RIGHT ABOVE THE MEIN CLASS .
+import java.util.*;
+public class Functions {
+    public static void printMyName(String name){
+        System.out.println(name);
+        return;
+      // we right fuction in voide we return noting 
+    }
+    public static void main(String args[]){
+      //input name
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next();
+        //functions call
+        printMyName(name);
+        
+    }
+}
+///ADD TWO NUMBER 
+import java.util.*;
+public class Functions {
+    public static int addNumber(int num1,int num2){
+        int sum = num1 +num2 ;
+        System.out.println(sum);
+        return 1;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        
+        addNumber(num1,num2);
+        
+    }
+}
+// multiply
+import java.util.*;
+public class Functions {
+    public static int addNumber(int num1,int num2){
+        int mul = num1*num2 ;
+        System.out.println(mul);
+        return 1;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        
+       int ans = addNumber(n1,n2);
+        System.out.println("enter the multiple of two number :"+ ans); 
+        
+    }
+}
+void multiply////
+
+import java.util.*;
+public class Functions {
+    public static void addNumber(int num1,int num2){
+        int mul = num1*num2 ;
+        System.out.println(mul);
+        return ;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        
+       addNumber(num1,num2);
+        
+    }
+}
+//factorial
+import java.util.*;
+public class Functions {
+    public static void addNumber(int num1){
+        if(num1<0){
+            System.out.println("invalid number");
+            return;
+        }
+       int fac=1;
+       for(int i=num1;i>=1;i--){
+           fac=fac*i;
+       }
+       System.out.println(fac);
+       return;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        addNumber(num1);
+    }
+}
+//eclips code 
+package com.student.managment;
+import java.util.*;
+public class Functions {
+	public static void avgSum(int n1,int n2,int n3) {
+		int avg = n1+n2+n3/3;
+		System.out.println(avg);
+		return;
+	}
+	public static void main(String args[] ) {
+		Scanner sc = new Scanner(System.in);
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int n3 = sc.nextInt();
+		
+		avgSum(n1,n2,n3);
+		sc.close();
+	}
+    
+}
+//odd sum
+package com.student.managment;
+import java.util.*;
+public class Functions {
+	public static int addOfOdd(int n) {
+		int sum=0;
+		for(int i=1;i<=n;i++) {
+			if(i%2==0) {
+			    sum=sum+i;
+			}
+		}
+		return sum;
+	}
+	public static void main(String args[] ) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int result = addOfOdd(n);
+        System.out.println("The sum of odd numbers up to " + n + " is: " + result);
+        
+        sc.close();
+		
+	}
+    
+}package com.student.managment;
+import java.util.*;
+public class Functions {
+	public static int greaterNum(int n1,int n2){
+		if(n1<n2) {
+			System.out.println("n2 is greater");
+		}
+		else {
+			System.out.println("n1 is greater");
+		}
+		return 1 ;
+	}
+	public static void main(String args[] ) {
+		Scanner sc = new Scanner(System.in);
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int result = greaterNum(n1,n2);
+        System.out.println("fint the greater number: " + result);
+        
+        sc.close();
+		
+	}
+    
+}
+///greater num 
+package com.student.managment;
+import java.util.*;
+public class Functions {
+	public static int greaterNum(int n1,int n2){
+		if(n1<n2) {
+			System.out.println("n2 is greater");
+		}
+		else {
+			System.out.println("n1 is greater");
+		}
+		return 1 ;
+	}
+	public static void main(String args[] ) {
+		Scanner sc = new Scanner(System.in);
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int result = greaterNum(n1,n2);
+        System.out.println("fint the greater number: " + result);
+        
+        sc.close();
+		
+	}
+    
+}
+//circumfrence 
+package com.student.managment;
+import java.util.*;
+public class Functions {
+	public static int circumCircle(int r){
+		int pie = 22/7;
+		int crcumfrence = 2*pie*r;
+		return crcumfrence ;
+	}
+	public static void main(String args[] ) {
+		Scanner sc = new Scanner(System.in);
+		int r = sc.nextInt();
+		int result = circumCircle(r);
+        System.out.println("find the circumfrence: " + result);
+        
+        sc.close();
+		
+	}
+    
+}
+//vote
+package com.student.managment;
+import java.util.*;
+public class Functions {
+	public static int vote(int age){
+		if(age>18) {
+			System.out.println(" you are eligible for vote ");
+		}
+		else {
+			System.out.println(" not adult so no vote");
+		}
+		return 1;
+	}
+	public static void main(String args[] ) {
+		Scanner sc = new Scanner(System.in);
+		int age = sc.nextInt();
+		int result = vote(age);
+        System.out.println("find the person eligible for vote or not: " + result);
+        
+        sc.close();
+		
+	}
+    
+}
+infinity loop through do while 
+  int count = 0;
+do {
+    System.out.println("Loop count: " + count);
+    count++;
+    
+    // Safety break condition
+    if (count >= 10) {
+        break; 
+    }
+} while (true);
+important question////
+package com.student.managment;
+import java.util.*;
+
+public class Functions {
+    public static void countNum() {
+        Scanner sc = new Scanner(System.in);
+        int positive = 0;
+        int negative = 0;
+        int zero = 0;
+        
+        System.out.println("Enter numbers (enter -1 to stop):");
+
+        while (true) {
+            int n = sc.nextInt();
+
+            if (n == -1) {
+                break; // Exit the loop
+            } else if (n > 0) {
+                positive++;
+            } else if (n < 0) {
+                negative++;
+            } else {
+                zero++;
+            }
+        }
+
+        System.out.println("Positive counts: " + positive);
+        System.out.println("Negative counts: " + negative);
+        System.out.println("Zero counts: " + zero);
+        
+        sc.close();
+    }
+
+    public static void main(String args[]) {
+        countNum();
+    }
+}
+
