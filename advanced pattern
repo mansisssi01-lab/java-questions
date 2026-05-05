@@ -1,0 +1,161 @@
+//butterfly////////////////////////////////
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int n=4;
+        // first half   
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+        for(int j=1;j<=2*(n-i);j++){
+            System.out.print(" ");
+        }
+        for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+     
+    System.out.println(" ");    
+    }
+    //second half
+    
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+        for(int j=1;j<=2*(n-i);j++){
+            System.out.print(" ");
+        }
+        for(int j=1;j<=i;j++){
+            System.out.print("*");
+        }
+     
+    System.out.println(" ");    
+    }
+    }
+}
+space then star////////
+class Main {
+    public static void main(String[] args) {
+        int n=4;
+        for(int i=1;i<=n;i++){
+            //space 
+            for( int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //star
+            for(int j=1;j<=n;j++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+//trinagle with space 
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            //space 
+            for( int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //star
+            for(int j=1;j<=i;j++){
+                System.out.print(i+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+//palandrome..
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            //space 
+            for( int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //1st half
+            for(int j=i;j>=1;j--){
+                System.out.print(j);
+            }
+            ////second half
+            for(int j=2;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println(" ");
+        }
+    }
+}
+//daimond pattern
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            //space 
+            for( int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //1st half
+            for(int j=i;j>=1;j--){
+                System.out.print("*");
+            }
+            ////second half
+            for(int j=2;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+        //second half
+         for(int i=n;i>=1;i--){
+            //space 
+            for( int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //1st half
+            for(int j=i;j>=1;j--){
+                System.out.print("*");
+            }
+            ////second half
+            for(int j=2;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+//easy diamond shape 
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1;i<=n;i++){
+            //space 
+            for( int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //1st half
+            int star = 2*i-1;
+            for(int j=1;j<=star;j++){
+                System.out.print("*");
+            }
+            
+            System.out.println(" ");
+        }
+        //second half
+        for(int i=n;i>=1;i--){
+            //space 
+            for( int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //1st half
+            int star = 2*i-1;
+            for(int j=1;j<=star;j++){
+                System.out.print("*");
+            }
+            
+            System.out.println(" ");
+        }
+    }
+}
