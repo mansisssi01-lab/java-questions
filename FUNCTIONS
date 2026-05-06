@@ -1,4 +1,4 @@
-// IN FUNCTION WE RIGHT ABOVE THE MEIN CLASS .
+// IN FUNCTION WE RIGHT ABOVE THE MEIN CLASS this is after the functions  .
 import java.util.*;
 public class Functions {
     public static void printMyName(String name){
